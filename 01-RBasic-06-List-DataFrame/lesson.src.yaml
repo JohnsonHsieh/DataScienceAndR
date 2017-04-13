@@ -223,7 +223,7 @@
   Output: |
     其實`[]`中括號這個函數，有一個參數叫做：`drop`，而且預設為`TRUE`。
     當我們使用`[]`取得結果的時候，如果有一個方向可以縮減維度（例如只有一個欄位的表格），R 就會自動把表格的結構破壞，回傳一個向量。
-    請同學試試看：`a[1:2, "id", drop = FALSE]`
+    請同學試試看：`a[1:2, "id", drop = FALSE]`，讓結果繼續保持data.frame的型態。
   CorrectAnswer: a[1:2, "id", drop = FALSE]
   AnswerTests: omnitest('a[1:2, "id", drop = FALSE]')
 
